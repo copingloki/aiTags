@@ -6,7 +6,7 @@ import VGG
 import cifar
 import colors
 
-img_path = '/Users/anton/Desktop/Personal/AI Projects/Photos/Photos/sunset.jpg'
+img_path = '/Users/anton/Desktop/Personal/AI Projects/Photos/aiTags/Photos/forest house.png'
 img = mpimg.imread(img_path)
 
 dominant_colors = colors.getDominantColors(img_path)
@@ -19,5 +19,5 @@ tag_cifar = cifar.tags(img_path)
 imgplot = plt.imshow(img)
 plt.yticks([])
 plt.xticks([])
-plt.xlabel(tag_vibe + " " + tag_vgg_mod + " " + tag_cifar + " #photography #art #photooftheday")
+plt.xlabel(tag_vibe + " " + tag_vgg_mod + " " + tag_cifar)
 plt.show()

@@ -104,22 +104,3 @@ for image_path in image_files_array:
     
     images_with_tags.append((img, tag))
 
-'''# Create a grid of subplots to display images with tags
-num_images = len(images_with_tags)
-num_rows = (num_images - 1) // 4 + 1
-fig, axes = plt.subplots(num_rows, 4, figsize=(5, 1 * num_rows))
-
-# Iterate through the images and plot them in the grid
-for i, (img, tag) in enumerate(images_with_tags):
-    row = i // 4
-    col = i % 4
-    ax = axes[row, col]
-    
-    ax.imshow(img)  # Display the image
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_xlabel(tag, fontsize=12, color='white', backgroundcolor='black')
-    
-# Adjust layout and display the grid
-plt.tight_layout()
-#plt.show()'''
